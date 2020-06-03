@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="685.0" style="-fx-background-color: #2b403e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.studentController">
+   <children>
+      <Pane layoutX="-8.0" prefHeight="186.0" prefWidth="699.0" style="-fx-background-color: #54ffc0;" />
+      <Pane layoutX="175.0" layoutY="132.0" prefHeight="361.0" prefWidth="321.0" style="-fx-background-color: #2b403e;">
+         <children>
+            <ImageView fitHeight="124.0" fitWidth="132.0" layoutX="95.0" layoutY="-82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/secretary(3).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="112.0" layoutY="281.0" mnemonicParsing="false" onAction="#status" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #54ffc0; -fx-background-radius: 80;" text="STATUS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="a" contentDisplay="CENTER" layoutX="3.0" layoutY="44.0" prefHeight="39.0" prefWidth="309.0" style="-fx-background-color: #2b403e;" textFill="#54ffc0" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label fx:id="b" contentDisplay="CENTER" layoutX="6.0" layoutY="85.0" prefHeight="39.0" prefWidth="309.0" style="-fx-background-color: #2b403e;" textFill="#54ffc0" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="course" contentDisplay="CENTER" layoutX="7.0" layoutY="130.0" prefHeight="39.0" prefWidth="309.0" style="-fx-background-color: #2b403e;" textFill="#54ffc0" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fee" alignment="CENTER" layoutX="46.0" layoutY="178.0" prefHeight="45.0" prefWidth="212.0" promptText="fees to be pay" style="-fx-border-radius: 100; -fx-border-color: #54ffc0; -fx-background-color: #2b403e;" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

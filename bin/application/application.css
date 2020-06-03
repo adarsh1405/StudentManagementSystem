@@ -1,0 +1,9 @@
+.text-field {
+	-fx-text-fill:#54ffc0;
+	 -jfx-focus-color: #54ffc0
+	 }
+	 
+.button:hover{
+	-fx-background-color: #54ffc0;
+	-fx-text-fill: black
+}

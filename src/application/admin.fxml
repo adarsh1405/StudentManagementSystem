@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="840.0" style="-fx-background-color: #2b403e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminController">
+   <children>
+      <AnchorPane layoutX="-51.0" prefHeight="500.0" prefWidth="246.0" style="-fx-background-color: #2b403e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="24.0" layoutY="320.0" mnemonicParsing="false" onAction="#Add_users" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #54ffc0; -fx-background-radius: 80; -fx-border-color: #2b403e;" stylesheets="@application.css" text="Add">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button layoutX="24.0" layoutY="376.0" mnemonicParsing="false" onAction="#Edit" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #54ffc0; -fx-background-radius: 80; -fx-border-color: #2b403e;" stylesheets="@application.css" text="Update">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <Button layoutX="24.0" layoutY="430.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #54ffc0; -fx-background-radius: 80; -fx-border-color: #2b403e;" stylesheets="@application.css" text="Delete">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></Button>
+            <TextField fx:id="txt_username" alignment="CENTER" layoutX="24.0" layoutY="60.0" onKeyReleased="#search_user" prefHeight="30.0" prefWidth="180.0" promptText="Username" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+            <TextField fx:id="txt_password" alignment="CENTER" layoutX="24.0" layoutY="110.0" prefHeight="30.0" prefWidth="180.0" promptText="Password" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+            <TextField fx:id="txt_dob" alignment="CENTER" layoutX="24.0" layoutY="159.0" prefHeight="30.0" prefWidth="180.0" promptText="DOB (DD/MM/YYYY)" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+            <TextField fx:id="txt_course" alignment="CENTER" layoutX="24.0" layoutY="207.0" prefHeight="30.0" prefWidth="180.0" promptText="Course" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+            <TextField fx:id="txt_id" alignment="CENTER" layoutX="24.0" layoutY="21.0" prefHeight="23.0" prefWidth="180.0" promptText="ID" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+            <TextField fx:id="txt_regd" alignment="CENTER" layoutX="24.0" layoutY="259.0" prefHeight="30.0" prefWidth="180.0" promptText="Registration Number" style="-fx-background-radius: 50; -fx-background-color: ffe694;" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="246.0" layoutY="46.0" onMouseClicked="#getSelected" prefHeight="454.0" prefWidth="596.0" style="-fx-background-color: #2b403e;">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="70.39996337890625" text="id" />
+          <TableColumn fx:id="col_name" prefWidth="142.4000244140625" text="name" />
+            <TableColumn fx:id="col_password" prefWidth="100.80001831054688" text="password" />
+            <TableColumn fx:id="col_dob" prefWidth="101.5999755859375" text="dob" />
+            <TableColumn fx:id="col_course" prefWidth="80.00006103515625" text="course" />
+            <TableColumn fx:id="col_regd" prefWidth="96.0001220703125" text="regd" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterField" alignment="CENTER" layoutX="271.0" layoutY="14.0" onAction="#search_user" promptText="Search" style="-fx-background-radius: 50; -fx-background-color: ffe694;" stylesheets="@application.css" />
+   </children>
+</AnchorPane>
